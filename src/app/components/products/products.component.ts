@@ -1,0 +1,4 @@
+import { Component, Output, EventEmitter } from '@angular/core'; @Component({ selector: 'app-products', templateUrl: './products.component.html', styleUrls: ['./products.component.scss'] }) export class ProductsComponent { @Output() galeriaSeleccionada
+= new EventEmitter
+<string>(); productos = [ { id: 'mujer', nombre: 'MUJER', img: 'assets/images/producto1.png', alt: 'Mujer1' }, { id: 'hombre', nombre: 'HOMBRE', img: 'assets/images/producto2.png', alt: 'Hombre1' }, { id: 'young', nombre: 'YOUNG', img: 'assets/images/producto3.png',
+    alt: 'Young' } ]; seleccionar(id: string) { this.galeriaSeleccionada.emit(id); } }

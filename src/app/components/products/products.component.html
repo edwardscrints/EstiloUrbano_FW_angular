@@ -1,0 +1,9 @@
+<div class="products-wrapper">
+    <div class="product" *ngFor="let prod of productos">
+        <img [src]="prod.img" [alt]="prod.alt" class="product-img" (click)="seleccionar(prod.id)">
+        <div class="product-description">
+            <h2 class="product-description-heading">{{ prod.nombre }}</h2>
+            <a class="product-description-btn" (click)="seleccionar(prod.id)">MIRA</a>
+        </div>
+    </div>
+</div>

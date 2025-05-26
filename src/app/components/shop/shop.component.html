@@ -1,0 +1,25 @@
+<div *ngIf="!galeria">
+    <div class="grid-productos">
+        <div class="producto-card" (click)="galeria = 'mujer'">
+            <div class="producto-titulo">MUJER</div>
+        </div>
+        <div class="producto-card" (click)="galeria = 'hombre'">
+            <div class="producto-titulo">HOMBRE</div>
+        </div>
+        <div class="producto-card" (click)="galeria = 'young'">
+            <div class="producto-titulo">YOUNG</div>
+        </div>
+    </div>
+</div>
+<div *ngIf="galeria === 'mujer'">
+    <!-- Aquí pones las imágenes de la galería mujer -->
+    <button class="btn-volver" (click)="volver()">Volver</button>
+</div>
+<div *ngIf="galeria === 'hombre'">
+    <!-- Aquí pones las imágenes de la galería hombre -->
+    <button class="btn-volver" (click)="volver()">Volver</button>
+</div>
+<div *ngIf="galeria === 'young'">
+    <!-- Aquí pones las imágenes de la galería young -->
+    <button class="btn-volver" (click)="volver()">Volver</button>
+</div>

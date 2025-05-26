@@ -1,0 +1,2 @@
+import { Component, OnInit } from '@angular/core'; import { ActivatedRoute } from '@angular/router'; @Component({ selector: 'app-shop', templateUrl: './shop.component.html', styleUrls: ['./shop.component.scss'] }) export class ShopComponent implements
+OnInit { galeria: string | null = null; constructor(private route: ActivatedRoute) {} ngOnInit() { this.route.queryParamMap.subscribe(params => { this.galeria = params.get('galeria'); }); } volver() { this.galeria = null; } }
