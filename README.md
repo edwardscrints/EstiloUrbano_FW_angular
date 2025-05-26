@@ -1,7 +1,6 @@
 
 Estructura del proyecto
 
-Dentro de tu proyecto Angular, la estructura de carpetas será algo así:
 
 ```
 /src
